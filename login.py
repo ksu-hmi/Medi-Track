@@ -13,7 +13,7 @@ bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 # Top Heading Frame
 TopHeadingFrame = Frame(window, width=700, bd=1)
 TopHeadingFrame.pack(side=TOP)
-HeadingLabel = Label(TopHeadingFrame, text="Shifa Medical Management System - Login",
+HeadingLabel = Label(TopHeadingFrame, text="MediTrack Management System - Login",
                      font=("Helvetica", 18), fg="blue", bg="white")
 HeadingLabel.grid(row=0, column=0, padx=1, pady=1)
 
