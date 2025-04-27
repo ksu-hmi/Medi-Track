@@ -4,8 +4,10 @@
  [X] Created and edited projectroadmap.md
  [X] Explored at least one existing Python code base related to project
  [x] Clone the repository to your local machine
- [] Add your name to the login 
+ [x] Add your name to the login 
  [x] Update the application name to MediTrack
+ [x] Add timer for user to track how often medication is needed 
+
    
 
  
