@@ -117,6 +117,36 @@ conn.commit()
 Back_button = Button(MidFrame, text="Back", command=back, font=("Helvetica", 16), fg="black", bg="lightgreen")
 Back_button.grid(row=8, column=1, padx=10, pady=10)
 
+import threading  # Import threading module for managing
+import time       # Import time module for handling the timer
+
+def set_alert():
+    def start_timer():
+        try:
+            duration = int(timer_entry.get())  # timer duration only in seconds
+            msg.showinfo("Alert Set", "Reminder set for {} seconds!".format(duration))
+            time.sleep(duration)  # Wait for the specified time
+            msg.showinfo("Medication Reminder", "It's time to take your medication!")
+        except ValueError:
+            msg.showerror("Invalid Input", "Please enter a valid number for the timer.")
+
+    threading.Thread(target=start_timer).start()  # Run the timer
+
+# Alert Timer Frame time to take medication!
+alert_frame = Frame(window, bd=1)
+alert_frame.pack(side=TOP, pady=20)
+
+alert_label = Label(alert_frame, text="Set Medication Alert (in seconds):", font=("Helvetica", 14), fg="blue")
+alert_label.pack(side=LEFT, padx=10)
+
+timer_entry = Entry(alert_frame, font=("Helvetica", 14), width=10)
+timer_entry.pack(side=LEFT, padx=10)
+
+alert_button = Button(alert_frame, text="Set Alert", command=set_alert, font=("Helvetica", 14), fg="black", bg="orange")
+alert_button.pack(side=LEFT, padx=10)
+
+Back_button = Button(MidFrame, text="Back", command=back, font=("Helvetica", 16), fg="black", bg="lightgreen")
+Back_button.grid(row=8, column=1, padx=10, pady=10)
 
 
 # Start the main loop
