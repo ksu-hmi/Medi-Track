@@ -1,28 +1,36 @@
-# MediTrack
----
-# Efficient Drug Prescription Management Software
+# medicine-management-system-tkinter-sqlite3
 
-## Overview
-This software is designed to provide **efficient drug prescription management** tailored specifically for individuals with chronic diseases. By leveraging advanced medication tracking, side effect monitoring, and integrated alert systems, it ensures optimal health outcomes and seamless communication between patients and healthcare providers.
+This is a Medicine Management System built using Python's Tkinter library for the GUI and SQLite3 for the database management. The system allows users to manage medicines by adding, viewing, searching, and deleting medicine records.
 
 ## Features
-### **1. Medication Tracking**
-- Allows users to record, organize, and update prescribed medications.
-- Tracks dosage schedules and refill dates to prevent missed doses.
-- Enables easy access to medication history for both patients and providers.
 
-### **2. Side Effect Monitoring**
-- Offers a platform for users to log side effects experienced after taking medications.
-- Provides insights into potential adverse reactions through data analysis.
-- Generates reports for healthcare providers to make informed prescription adjustments.
+- **User Authentication:**
+  - Users can register and log in to access the system.
 
-### **3. Integrated Alerts**
-- Sends timely reminders for medication intake.
-- Alerts users about upcoming refill dates to avoid interruptions in treatment.
-- Notifies healthcare providers about significant side effect trends.
+- **Add Medicine:**
+  - Users can add new medicines to the system, including details like name, quantity, and expiry date.
 
-## Benefits
-- **Patient Safety:** Reduces medication errors and ensures adherence to prescribed schedules.
-- **Healthcare Efficiency:** Streamlines communication between patients and providers regarding prescriptions and reactions.
-- **Data-Driven Insights:** Facilitates proactive interventions based on monitored side effects and trends.
+- **View Medicines:**
+  - Users can view a list of all medicines stored in the system.
+
+- **Search Medicine:**
+  - Users can search for specific medicines by name.
+
+- **Delete Medicine:**
+  - Users can delete medicines from the system.
+
+
+### Prerequisites
+
+- Python 3.x
+- SQLite3
+- Tkinter (comes pre-installed with Python)
+
+### Setting Up the Environment
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/Riyaz18/medicine-management-system-tkinter-sqlite3.git
+   cd medicine-management-system-tkinter-sqlite3
 
