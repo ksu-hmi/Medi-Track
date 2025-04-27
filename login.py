@@ -3,7 +3,7 @@ import sqlite3
 import tkinter.messagebox as msg
 window = Tk()
 window.geometry('900x600')
-window.title("Shifa Medical Management System")
+window.title("MediTrack Medical Management System")
 window.iconbitmap('icon.ico')
 # Background image
 reg_image = PhotoImage(file="register_bg.png")
