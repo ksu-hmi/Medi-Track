@@ -23,17 +23,17 @@ MidFrame.pack(side=TOP)
 # Username Label and Textbox
 username = StringVar()
 username.set("")
-usernameLabel = Label(MidFrame, text="Username", font=("Helvetica", 16), fg="blue", bg="white")
+usernameLabel = Label(MidFrame, text="Username", font=("Arial", 16), fg="orange", bg="white")
 usernameLabel.grid(row=0, column=0, padx=1, pady=1)
-usernameTextBox = Entry(MidFrame, font=("Helvetica", 16), textvariable=username)
+usernameTextBox = Entry(MidFrame, font=("Arial", 16), textvariable=username)
 usernameTextBox.grid(row=0, column=1, padx=1, pady=1)  # Adjusted row and column
 
 # Password Label and Textbox
 password = StringVar()
 password.set("")
-passwordLabel = Label(MidFrame, text="Password", font=("Helvetica", 16), fg="blue", bg="white")
+passwordLabel = Label(MidFrame, text="Password", font=("Arial", 16), fg="orange", bg="white")
 passwordLabel.grid(row=1, column=0, padx=1, pady=1)
-passwordTextBox = Entry(MidFrame, font=("Helvetica", 16), textvariable=password, show='*')
+passwordTextBox = Entry(MidFrame, font=("Arial", 16), textvariable=password, show='*')
 passwordTextBox.grid(row=1, column=1, padx=1, pady=1)
 
 def register():
@@ -52,14 +52,14 @@ def login():
         msg.showinfo("Login Error","User not defined",icon="warning")
 
 # Submit Button
-submit_button = Button(MidFrame, text="Register", command=register, font=("Helvetica", 16), fg="black", bg="green")
+submit_button = Button(MidFrame, text="Register", command=register, font=("Arial", 16), fg="black", bg="green")
 submit_button.grid(row=3, column=1, padx=1, pady=1)
 
 # Already a User Label and Login Button
-notuserLabel = Label(MidFrame, text="Not user yet?", font=("Helvetica", 16), fg="blue", bg="white")
+notuserLabel = Label(MidFrame, text="Not user yet?", font=("Arial", 16), fg="blue", bg="white")
 notuserLabel.grid(row=3, column=0, padx=1, pady=1)
 
-login_button = Button(MidFrame, text="Login", command=login, font=("Helvetica", 16), fg="black", bg="pink")
+login_button = Button(MidFrame, text="Login", command=login, font=("Arial", 16), fg="black", bg="pink")
 login_button.grid(row=2, column=1, padx=1, pady=1)
 
 window.mainloop()
