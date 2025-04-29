@@ -1,0 +1,14 @@
+MediTrack/
+├── home.py                      # Entry point (home screen)
+├── alert.py                     # Alert notification logic
+├── schedule_tracker.py          # Schedule tracking interface
+├── modules/
+│   ├── add_medicine.py          # Add new medication to system
+│   ├── view_medicine.py         # View all stored medicine
+│   ├── search_medicine.py       # Search medicine names
+│   ├── delete_medicine.py       # Remove any medications
+│   └── login.py
+├── assets/
+│   ├── icon.ico                 # App icon
+│   └── register_bg.png          # Background image
+├── README.md                    # Project documentation
