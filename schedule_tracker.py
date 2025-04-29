@@ -1,4 +1,4 @@
-#This helps users track when medications should be taken and notifthe patient.
+#This helps users track when medications should be taken and notifies the patient.
 from datetime import datetime, timedelta
 
 def generate_schedule(start_time, interval_hours, doses):
