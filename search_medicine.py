@@ -24,7 +24,7 @@ def search():
 # Initialize the main window
 window = Tk()
 window.geometry('900x600')
-window.title("Shifa Medical Management System - Search Medicine")
+window.title("MediTrack Medical Management System - Search Medicine")
 window.iconbitmap('icon.ico')
 
 # Background image
@@ -36,7 +36,7 @@ bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 TopHeadingFrame = Frame(window, bd=1)
 TopHeadingFrame.pack(side=TOP, pady=20)
 
-HeadingLabel = Label(TopHeadingFrame, text="Shifa Medical Management System - Search Medicine",
+HeadingLabel = Label(TopHeadingFrame, text="MediTrack Medical Management System - Search Medicine",
                      font=("Helvetica", 18), fg="blue", bg="white")
 HeadingLabel.pack(padx=10, pady=10)
 
