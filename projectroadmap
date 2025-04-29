@@ -17,6 +17,6 @@ Alexis Francis
 [x] Clone the repository to your local machine
 [x] Added a schedule tracker feature
 [ ] Create a popup alert notification that checks for due medication
-[ ] Update folder/file structure that describes essential Python files
-[ ] Add schedule tracker and alerts button to home.py
+[x] Update folder/file structure that describes essential Python files
+[x] Add schedule tracker and alerts button to home.py
  
